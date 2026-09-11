@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#181818"/>
+  <!-- Fourchette -->
+  <path d="M22 14v10c0 2.2 1.4 4 3.2 4.6V48c0 1.1.9 2 2 2s2-.9 2-2V28.6c1.8-.6 3.2-2.4 3.2-4.6V14h-2v7h-1.8v-7h-2v7h-1.8v-7H22z" fill="#20c997"/>
+  <!-- Couteau -->
+  <path d="M38 14c0 0 5.5 2 5.5 12v3.5c0 2.2-1.4 4-3.2 4.6V48c0 1.1-.9 2-2 2s-2-.9-2-2V14h1.7z" fill="#ffffff"/>
+</svg>

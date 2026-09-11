@@ -1,11 +1,11 @@
-# 🍽️ Chic Food - Site Vitrine One-Page (Bootstrap 5)
+# Chic Food - Site Vitrine One-Page (Bootstrap 5)
 
 **Projet personnel réalisé en totale autonomie (en solo)** en **2025**, en parallèle de ma deuxième année d'université.  
 Ce projet a été conçu dans le cadre de mon auto-apprentissage du framework **Bootstrap 5**, avec pour objectif de développer de A à Z un **site vitrine One-Page** moderne, interactif et responsive pour un restaurant gastronomique fictif : **Chic Food**.
 
 ---
 
-## 🎯 Contexte & Objectifs
+## Contexte et Objectifs
 
 Ce projet personnel visait à maîtriser par la pratique les compétences fondamentales de l'intégration web moderne :
 - **Découverte et apprentissage en solo de Bootstrap 5** : utilisation de la grille à 12 colonnes, des breakpoints responsive et des composants UI natifs.
@@ -16,7 +16,7 @@ Ce projet personnel visait à maîtriser par la pratique les compétences fondam
 
 ---
 
-## ✨ Fonctionnalités Réalisées
+## Fonctionnalités Réalisées
 
 1. **Navigation One-Page Responsive :**
    - Barre de navigation fixe (*sticky*) avec effet de flou élégant en arrière-plan.
@@ -27,15 +27,15 @@ Ce projet personnel visait à maîtriser par la pratique les compétences fondam
    - En-tête plein écran valorisant l'atmosphère du restaurant.
    - Boutons d'action (*Call-to-Action*) dirigeant directement vers la réservation et la commande.
 
-3. **Section Histoire & Savoir-Faire :**
+3. **Section Histoire et Savoir-Faire :**
    - Présentation de la démarche culinaire, des produits frais et de la salle.
    - Carrousel imbriqué présentant les créations du chef.
 
 4. **Carte Interactive avec Onglets :**
    - Système d'onglets dynamiques Bootstrap (`nav-tabs`) permettant de basculer instantanément entre :
-     - 🥩 *Nos Plats Phares*
-     - 🥗 *Entrées & Tapas*
-     - 🍨 *Desserts & Douceurs*
+     - *Nos Plats Phares*
+     - *Entrées et Tapas*
+     - *Desserts et Douceurs*
    - Cartes de présentation avec photos, descriptions des ingrédients et tarifs clairs en euros.
 
 5. **Carrousel Grand Format ("Les Délices Interdits") :**
@@ -49,20 +49,20 @@ Ce projet personnel visait à maîtriser par la pratique les compétences fondam
 
 ---
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 
 | Technologie | Rôle dans le projet |
 | :--- | :--- |
 | **HTML5** | Balisage sémantique, structuration et accessibilité |
 | **CSS3** | Styles personnalisés, variables et adaptations graphiques |
 | **Bootstrap 5.3.5** | Framework responsive, grille, carrousels, onglets et modales |
-| **Google Fonts** | Polices de caractères *Merriweather* (sérif) & *Redressed* (cursif) |
+| **Google Fonts** | Polices de caractères *Merriweather* (sérif) et *Redressed* (cursif) |
 | **Font Awesome 6** | Icônes vectorielles pour l'interface |
-| **Git & GitHub** | Gestion de versions et publication du code source |
+| **Git et GitHub** | Gestion de versions et publication du code source |
 
 ---
 
-## 🚀 Installation & Visualisation Locale
+## Installation et Visualisation Locale
 
 Le projet étant purement statique, aucune installation lourde n'est requise.
 
@@ -81,7 +81,7 @@ Le projet étant purement statique, aucune installation lourde n'est requise.
 
 ---
 
-## 🌐 Déploiement en Ligne (GitHub Pages)
+## Déploiement en Ligne (GitHub Pages)
 
 Ce projet est optimisé pour un hébergement gratuit et rapide via **GitHub Pages** :
 1. Dans votre dépôt GitHub, ouvrez **Settings** > **Pages**.
@@ -91,7 +91,7 @@ Ce projet est optimisé pour un hébergement gratuit et rapide via **GitHub Page
 
 ---
 
-## 👨‍💻 Auteur
+## Auteur
 
-- **Lucien HAIKOU**  
+- **[Lucien HAIKOU](https://www.linkedin.com/in/lucienhaikou10)**  
   *Développeur web — Projet personnel réalisé en solo (2025, 2ᵉ année d'université).*

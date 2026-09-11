@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chic Food - Restaurant gastronomique. Découvrez nos créations culinaires, produits frais de saison et saveurs inoubliables. Réservez votre table en ligne.">
+    <title>Chic Food - Restaurant Gastronomique & Plaisirs Gourmands</title>
+
+    <!-- Google Fonts (Merriweather & Redressed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Redressed&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap 5 & Styles personnalisés -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+    <nav class="cc-navbar navbar navbar-expand-lg position-fixed w-100 navbar-dark">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand text-uppercase fw-bolder redressed fs-2 d-flex align-items-center" href="#accueil">
+                <i class="fas fa-utensils text-info me-2"></i>Chic Food
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu de navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link" href="#decouvrir">Découvrir</a>
+                    </li>
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link" href="#menu">La Carte</a>
+                    </li>
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link" href="#specialites">Spécialités</a>
+                    </li>
+                    <li class="nav-item pe-lg-4">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0">
+                        <button class="btn btn-order rounded-0 px-4 py-2" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                            <i class="fas fa-concierge-bell me-2"></i>Réserver une table
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bannière Hero -->
+    <header id="accueil" class="banner d-flex justify-content-center align-items-center pt-5">
+        <div class="container my-5 py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <h1 class="text-capitalize py-3 redressed banner-desc">
+                        L'art de la gastronomie et des saveurs authentiques.
+                    </h1>
+                    <p class="banner-sub mb-4">
+                        Une cuisine raffinée, des produits frais de saison et une expérience culinaire pensée pour éveiller vos sens.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <button class="btn btn-order btn-lg rounded-0 merriweather px-4" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                            <i class="fas fa-shopping-bag me-2"></i>Commander maintenant
+                        </button>
+                        <button class="btn btn-outline-light btn-lg rounded-0 merriweather px-4" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                            <i class="fas fa-calendar-alt me-2"></i>Réserver une table
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Découverte / Notre Savoir-Faire -->
+        <section id="decouvrir" class="merriweather py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="text-uppercase text-muted small fw-bold">Notre Philosophie</span>
+                    <h2 class="display-6 fw-bold redressed text-dark">Une Passion Culinaire Sans Compromis</h2>
+                    <div class="mx-auto bg-dark my-2" style="width: 60px; height: 2px;"></div>
+                </div>
+
+                <!-- Carte 1 -->
+                <div class="card decouverte-card mb-4 rounded-0 border-0 shadow-sm overflow-hidden">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-12 col-md-6">
+                            <img src="asset/img/food1.jpg" alt="Sélection d'ingrédients frais et de saison" class="img-fluid w-100">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-body p-4 p-lg-5">
+                                <span class="badge bg-dark text-light mb-2"><i class="fas fa-leaf me-1"></i> Fraîcheur Garantie</span>
+                                <h3 class="card-title fw-bold text-dark">Des Produits Frais & Éco-responsables</h3>
+                                <p class="card-text text-muted">
+                                    Chaque matin, nos chefs sélectionnent rigoureusement les meilleurs ingrédients auprès de producteurs locaux passionnés. Nous privilégions les circuits courts et les arrivages du jour pour garantir un goût d'exception dans chaque assiette.
+                                </p>
+                                <button class="btn btn-outline-dark rounded-0 mt-2" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                    <i class="fas fa-calendar-check me-2"></i>Réserver une table
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 2 (avec carrousel de photos) -->
+                <div class="card decouverte-card mb-4 rounded-0 border-0 shadow-sm overflow-hidden">
+                    <div class="row g-0 align-items-center flex-md-row-reverse">
+                        <div class="col-12 col-md-6">
+                            <div id="carouselDecouvrir" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid w-100" src="asset/img/1.jpg" alt="Dressage gastronomique soigné">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid w-100" src="asset/img/4.jpg" alt="Plat signature du chef">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid w-100" src="asset/img/food3.jpg" alt="Poisson frais et herbes fines">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid w-100" src="asset/img/2.jpg" alt="Accompagnements gourmands">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid w-100" src="asset/img/6.jpg" alt="Pâtisserie artisanale maison">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDecouvrir" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Précédent</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselDecouvrir" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Suivant</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-body p-4 p-lg-5">
+                                <span class="badge bg-dark text-light mb-2"><i class="fas fa-fire me-1"></i> Création Signature</span>
+                                <h3 class="card-title fw-bold text-dark">L'Harmonie des Textures & Épices</h3>
+                                <p class="card-text text-muted">
+                                    Nos recettes sont le fruit d'une recherche constante d'équilibre entre traditions culinaires françaises et inspirations contemporaines. Cuissons maîtrisées à la minute et émulsions délicates sauront émerveiller vos papilles.
+                                </p>
+                                <a href="#menu" class="btn btn-outline-dark rounded-0 mt-2">
+                                    <i class="fas fa-utensils me-2"></i>Consulter la carte
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="card decouverte-card mb-2 rounded-0 border-0 shadow-sm overflow-hidden">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-12 col-md-6">
+                            <img src="asset/img/food2.jpg" alt="Cadre intimiste et convivial de notre restaurant" class="img-fluid w-100">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-body p-4 p-lg-5">
+                                <span class="badge bg-dark text-light mb-2"><i class="fas fa-heart me-1"></i> Accueil Chaleureux</span>
+                                <h3 class="card-title fw-bold text-dark">Une Ambiance Élégante & Intimiste</h3>
+                                <p class="card-text text-muted">
+                                    Que vous veniez pour un dîner romantique, un repas d'affaires ou une célébration entre proches, notre équipe dévouée vous offre un service discret et personnalisé au sein d'une salle à l'atmosphère feutrée.
+                                </p>
+                                <a href="#contact" class="btn btn-outline-dark rounded-0 mt-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Nous situer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Menu & Variétés -->
+        <section id="menu" class="cc-menu py-5 merriweather text-light">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="display-5 text-light redressed">Nos Variétés Gourmandes</h2>
+                    <p class="lead text-light-50">Une sélection raffinée imaginée par notre Chef exécutif</p>
+                </div>
+
+                <!-- Onglets Dynamiques Bootstrap -->
+                <div class="card bg-transparent text-center mb-5 border-0">
+                    <div class="card-header border-0 bg-transparent">
+                        <ul class="nav nav-tabs justify-content-center card-header-tabs" id="menuTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active redressed fs-5" id="plats-tab" data-bs-toggle="tab" data-bs-target="#plats" type="button" role="tab" aria-controls="plats" aria-selected="true">
+                                    <i class="fas fa-drumstick-bite me-2"></i>Nos Plats
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link redressed fs-5" id="entrees-tab" data-bs-toggle="tab" data-bs-target="#entrees" type="button" role="tab" aria-controls="entrees" aria-selected="false">
+                                    <i class="fas fa-seedling me-2"></i>Entrées & Tapas
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link redressed fs-5" id="desserts-tab" data-bs-toggle="tab" data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">
+                                    <i class="fas fa-ice-cream me-2"></i>Desserts & Douceurs
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contenu des Onglets -->
+                <div class="tab-content" id="menuTabsContent">
+                    <!-- Onglet 1: Plats -->
+                    <div class="tab-pane fade show active" id="plats" role="tabpanel" aria-labelledby="plats-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/food4.jpg" class="card-img-top" alt="Filet de Bœuf Rossini">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Filet Rossini</h5>
+                                            <span class="price-tag">28 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Bœuf charolais poêlé, médaillon de foie gras maison, jus corsé à la truffe noire et écrasé de pommes grenailles.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/1.jpg" class="card-img-top" alt="Pavé de Saumon Rôti">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Saumon Rôti</h5>
+                                            <span class="price-tag">24 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Saumon d'Islande juste saisi, mousseline de céleri rave, jeunes pousses et émulsion au beurre blanc citronné.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/2.jpg" class="card-img-top" alt="Risotto Crémeux aux Champignons">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Risotto Truffé</h5>
+                                            <span class="price-tag">22 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Riz Carnaroli crémeux au parmesan Reggiano 24 mois, morilles et copeaux de truffe d'été.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/4.jpg" class="card-img-top" alt="Burger Gourmet Chic Food">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Burger Gourmet</h5>
+                                            <span class="price-tag">19 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Pain brioché artisanal, steak haché façon bouchère, cheddar affiné, confit d'oignons rouges et frites maison.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Onglet 2: Entrées -->
+                    <div class="tab-pane fade" id="entrees" role="tabpanel" aria-labelledby="entrees-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/food1.jpg" class="card-img-top" alt="Carpaccio de Saint-Jacques">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Saint-Jacques</h5>
+                                            <span class="price-tag">16 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Fines lamelles de coquilles Saint-Jacques marinées aux agrumes, baies roses et huile d'olive vierge extra.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/food3.jpg" class="card-img-top" alt="Tartare de Saumon & Mangue">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Tartare Exotique</h5>
+                                            <span class="price-tag">15 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Saumon frais coupé au couteau, dés de mangue mûre, coriandre fraîche et vinaigrette passion-gingembre.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/food2.jpg" class="card-img-top" alt="Velouté de Saison">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Velouté Doré</h5>
+                                            <span class="price-tag">13 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Crème onctueuse de potimarron rôti, éclats de châtaignes caramélisées et espuma de parmesan affiné.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/3.jpg" class="card-img-top" alt="Burrata Crémeuse des Pouilles">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Burrata d'Italie</h5>
+                                            <span class="price-tag">14 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Cœur crémeux de burrata, tomates cerises confites au thym, pesto basilic maison et pain ciabatta grillé.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Onglet 3: Desserts -->
+                    <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/5.jpg" class="card-img-top" alt="Fondant Chocolat Noir Intense">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Fondant Chocolat</h5>
+                                            <span class="price-tag">11 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Cœur coulant au chocolat noir 72% Valrhona, glace artisanale à la vanille Bourbon de Madagascar.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/6.jpg" class="card-img-top" alt="Tartelette Citron Meringuée">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Tartelette Citron</h5>
+                                            <span class="price-tag">10 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Pâte sablée croustillante au beurre frais, crème acidulée aux citrons de Menton et meringue à l'italienne.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/image (36).jpg" class="card-img-top" alt="Café Gourmand Chic Food">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Café Gourmand</h5>
+                                            <span class="price-tag">12 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Espresso d'Éthiopie accompagné de 4 mignardises maison (macaron, mini-cannelé, panna cotta et chou praliné).
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dish-card h-100 rounded-0">
+                                    <img src="asset/img/image (37).jpg" class="card-img-top" alt="Tiramisu Traditionnel">
+                                    <div class="card-body d-flex flex-column text-dark">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold mb-0">Tiramisu Classico</h5>
+                                            <span class="price-tag">9 €</span>
+                                        </div>
+                                        <p class="card-text small text-muted flex-grow-1">
+                                            Recette vénitienne authentique : mascarpone léger, biscuits cuillère imbibés d'amaretto et cacao amer.
+                                        </p>
+                                        <button class="btn btn-order rounded-0 btn-sm w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                            <i class="fas fa-plus me-1"></i> Commander
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Spécialités Carrousel -->
+        <section id="specialites" class="cc-carousel bg-dark text-light merriweather text-center py-5">
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-8">
+                        <h2 class="text-uppercase redressed display-5">Les Délices Interdits</h2>
+                        <div class="mx-auto bg-light my-3" style="width: 50px; height: 2px;"></div>
+                        <p class="lead text-light-50">
+                            Chaque mois, découvrez une création éphémère d'exception qui transcende les codes de la haute gastronomie.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade specialite-carousel shadow-lg" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Spécialité 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Spécialité 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Spécialité 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active position-relative">
+                            <img src="asset/img/3.jpg" class="d-block w-100" alt="Dégustation Prestige">
+                            <div class="carousel-caption d-none d-md-block specialite-caption">
+                                <h4 class="fw-bold redressed fs-2">Le Plateau Dégustation Prestige</h4>
+                                <p class="mb-0">Une harmonie parfaite de saveurs marines et de douceurs d'alpages.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <img src="asset/img/5.jpg" class="d-block w-100" alt="Haute Pâtisserie Gourmande">
+                            <div class="carousel-caption d-none d-md-block specialite-caption">
+                                <h4 class="fw-bold redressed fs-2">Haute Pâtisserie d'Art</h4>
+                                <p class="mb-0">L'alliance de cacaos rares et d'arômes floraux délicats.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <img src="asset/img/pexels-hakam-magdea-2151202916-31685177.jpg" class="d-block w-100" alt="Atmosphère Étoilée">
+                            <div class="carousel-caption d-none d-md-block specialite-caption">
+                                <h4 class="fw-bold redressed fs-2">L'Expérience Gastronomique Complète</h4>
+                                <p class="mb-0">Menu carte blanche en 6 services avec accords mets et vins d'exception.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de Page (Footer) -->
+    <footer id="contact" class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary">
+                <!-- Col 1: Marque -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="redressed fs-3 text-white mb-3">
+                        <i class="fas fa-utensils text-info me-2"></i>Chic Food
+                    </h5>
+                    <p class="small">
+                        Une table d'exception où se mêlent tradition, passion et créativité culinaire. Venez savourer un moment inoubliable en notre compagnie.
+                    </p>
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Horaires -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase fs-6 mb-3 fw-bold text-white">Horaires d'Ouverture</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2 d-flex justify-content-between">
+                            <span>Lundi - Jeudi :</span>
+                            <span class="text-white">12h00 - 22h30</span>
+                        </li>
+                        <li class="mb-2 d-flex justify-content-between">
+                            <span>Vendredi - Samedi :</span>
+                            <span class="text-white">12h00 - 23h30</span>
+                        </li>
+                        <li class="mb-2 d-flex justify-content-between">
+                            <span>Dimanche :</span>
+                            <span class="text-white">12h00 - 22h00</span>
+                        </li>
+                        <li class="mt-2 text-info">
+                            <i class="fas fa-clock me-1"></i> Service continu le week-end
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Coordonnées -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase fs-6 mb-3 fw-bold text-white">Contact & Accès</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt text-info me-2"></i> 14 Avenue des Saveurs, 75008 Paris
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone text-info me-2"></i> <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope text-info me-2"></i> <a href="mailto:contact@chicfood.fr">contact@chicfood.fr</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-parking text-info me-2"></i> Service voiturier disponible
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase fs-6 mb-3 fw-bold text-white">Newsletter</h5>
+                    <p class="small">Recevez nos invitations exclusives et le menu éphémère en avant-première.</p>
+                    <form onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control rounded-0 border-0" placeholder="Votre email" required>
+                            <button class="btn btn-order rounded-0 px-3" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bas de page -->
+            <div class="row pt-3 align-items-center small text-center text-md-start">
+                <div class="col-md-6">
+                    &copy; 2026 <strong>Chic Food</strong>. Tous droits réservés.
+                </div>
+                <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <a href="#" class="me-3">Mentions Légales</a>
+                    <a href="#" class="me-3">Politique de Confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modale de Réservation / Commande Interactive -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title redressed fs-3" id="reservationModalLabel">
+                        <i class="fas fa-calendar-check me-2 text-info"></i>Réservation & Commande
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form onsubmit="event.preventDefault(); alert('Votre demande a bien été enregistrée ! Notre équipe vous confirmera sous peu.'); bootstrap.Modal.getInstance(document.getElementById('reservationModal')).hide();">
+                        <div class="mb-3">
+                            <label for="clientName" class="form-label fw-bold small">Nom et Prénom *</label>
+                            <input type="text" class="form-control rounded-0" id="clientName" placeholder="Ex: Jean Dupont" required>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md-6">
+                                <label for="clientPhone" class="form-label fw-bold small">Téléphone *</label>
+                                <input type="tel" class="form-control rounded-0" id="clientPhone" placeholder="06 12 34 56 78" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="clientGuests" class="form-label fw-bold small">Couverts *</label>
+                                <select class="form-select rounded-0" id="clientGuests" required>
+                                    <option value="1">1 personne</option>
+                                    <option value="2" selected>2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5">5 personnes</option>
+                                    <option value="6+">6 personnes ou plus</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md-6">
+                                <label for="resDate" class="form-label fw-bold small">Date *</label>
+                                <input type="date" class="form-control rounded-0" id="resDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="resTime" class="form-label fw-bold small">Heure *</label>
+                                <select class="form-select rounded-0" id="resTime" required>
+                                    <option value="12:00">12h00</option>
+                                    <option value="12:30">12h30</option>
+                                    <option value="13:00">13h00</option>
+                                    <option value="19:30">19h30</option>
+                                    <option value="20:00" selected>20h00</option>
+                                    <option value="20:30">20h30</option>
+                                    <option value="21:00">21h00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientNotes" class="form-label fw-bold small">Demande particulière ou choix de plats</label>
+                            <textarea class="form-control rounded-0" id="clientNotes" rows="3" placeholder="Allergies, table en terrasse, plats souhaités..."></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-order rounded-0 py-2">
+                                <i class="fas fa-check-circle me-2"></i>Confirmer ma demande
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

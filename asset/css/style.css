@@ -1,0 +1,249 @@
+/* --- Configuration & Polices --- */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.redressed {
+    font-family: 'Redressed', cursive;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+/* --- Barre de Navigation --- */
+.cc-navbar {
+    background-color: rgba(18, 18, 18, 0.88);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1030;
+    transition: background-color 0.3s ease;
+}
+
+.cc-navbar .navbar-brand {
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.cc-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    padding-bottom: 6px;
+}
+
+.cc-navbar .nav-link:hover,
+.cc-navbar .nav-link.active {
+    color: #fff !important;
+    border-bottom-color: var(--bs-teal);
+}
+
+@media (max-width: 991.98px) {
+    .cc-navbar .navbar-collapse {
+        background-color: rgba(18, 18, 18, 0.98);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-top: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* --- Boutons personnalisés --- */
+.btn-order {
+    color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition: all 0.3s ease;
+}
+
+.btn-order:hover,
+.btn-order:active,
+.btn-order:focus {
+    color: #fff;
+    background-color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    box-shadow: 0 0 14px rgba(32, 201, 151, 0.4);
+}
+
+/* --- Section Bannière (Hero) --- */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(../img/b1.jpg) center center fixed no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner .banner-desc {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.banner .banner-sub {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 300;
+}
+
+/* --- Cartes Découverte & Histoire --- */
+.decouverte-card {
+    transition: box-shadow 0.3s ease;
+}
+
+.decouverte-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.decouverte-card img {
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+/* --- Section Menu --- */
+.cc-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)), url(../img/bb1.jpg) center center fixed no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
+.cc-menu .card-header-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cc-menu .nav-tabs .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding: 0.6rem 1.2rem;
+}
+
+.cc-menu .nav-tabs .nav-link:hover {
+    color: #fff;
+    border-bottom-color: rgba(32, 201, 151, 0.6);
+}
+
+.cc-menu .nav-tabs .nav-link.active {
+    background-color: transparent !important;
+    color: var(--bs-teal) !important;
+    border-bottom: 2px solid var(--bs-teal) !important;
+    font-weight: bold;
+}
+
+/* Cartes de plats */
+.dish-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.dish-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.dish-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.dish-card:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+.price-tag {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bs-teal);
+}
+
+/* --- Section Carrousel Spécialités --- */
+.specialite-carousel .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.specialite-caption {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+}
+
+/* --- Pied de page (Footer) --- */
+footer {
+    background-color: #111;
+    color: #b0b0b0;
+}
+
+footer h5 {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+footer a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--bs-teal);
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: var(--bs-teal);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* --- Modale personnalisée --- */
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-bottom: 2px solid var(--bs-teal);
+}
+
+/* --- Ajustements Mobiles (Performances) --- */
+@media (max-width: 768px) {
+    .banner, .cc-menu {
+        background-attachment: scroll;
+    }
+    .specialite-carousel .carousel-item img {
+        height: 320px;
+    }
+    .banner .banner-desc {
+        font-size: 2.2rem;
+    }
+}

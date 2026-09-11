@@ -1,62 +1,97 @@
-﻿# 🍽️ Chic Food - Site Vitrine Gastronomique
+# 🍽️ Chic Food - Projet d'Intégration Web (Bootstrap 5)
 
-Bienvenue sur le projet **Chic Food**, un site vitrine moderne, élégant et responsive pour un restaurant gastronomique.
-
----
-
-## ✨ Fonctionnalités
-
-- **Navigation fluide (One-Page)** : Défilement doux (*Smooth Scroll*) vers chaque section (*Accueil*, *Découvrir*, *La Carte*, *Spécialités*, *Contact*).
-- **Hero Banner immersif** : En-tête plein écran valorisant l'ambiance et invitant à l'action.
-- **Section Histoire & Savoir-Faire** : Présentation des valeurs et du chef avec carrousel photo intégré.
-- **Menu interactif avec onglets** : Navigation dynamique entre les *Plats*, *Entrées* et *Desserts* avec prix et descriptions soignées.
-- **Carrousel "Les Délices Interdits"** : Mise en avant grand format des créations éphémères du chef.
-- **Modale de Réservation & Commande** : Formulaire interactif pour réserver une table ou commander à emporter.
-- **Pied de page complet (Footer)** : Horaires détaillés, coordonnées, plan d'accès, réseaux sociaux et inscription à la newsletter.
-- **Design 100% Responsive** : Optimisé pour smartphones, tablettes et ordinateurs de bureau.
+Projet académique réalisé en **2025** dans le cadre de ma **deuxième année d'université**.  
+Ce projet a été conçu lors de mon apprentissage du framework front-end **Bootstrap 5**, dans l'objectif de concevoir un site web vitrine complet, élégant et entièrement responsive pour un restaurant gastronomique fictif : **Chic Food**.
 
 ---
 
-## 🛠️ Technologies utilisées
+## 🎯 Contexte & Objectifs Pédagogiques
 
-- **HTML5** : Structure sémantique et accessible.
-- **CSS3** : Styles personnalisés, variables CSS, effets de flou (*backdrop-filter*) et animations.
-- **Bootstrap 5.3.5** : Système de grille responsive, carrousels, onglets et modales.
-- **Google Fonts** : *Merriweather* (sérif élégant) & *Redressed* (cursif d'exception).
-- **Font Awesome 6** : Bibliothèque d'icônes vectorielles.
+Ce projet universitaire avait pour vocation de mettre en pratique les concepts fondamentaux de l'intégration web moderne :
+- **Découverte et apprentissage de Bootstrap 5** : utilisation du système de grille à 12 colonnes, des breakpoints responsive, et des composants UI prêts à l'emploi.
+- **Responsive Web Design (RWD)** : conception d'une interface adaptée aux smartphones, tablettes et ordinateurs de bureau.
+- **Surcharge et personnalisation CSS** : personnalisation de la charte graphique par-dessus Bootstrap (palette de couleurs, typographies personnalisées, ombrages, effets *backdrop-filter*).
+- **Interactivité front-end** : mise en œuvre des composants interactifs de Bootstrap (onglets dynamiques de la carte, carrousels en boucle, fenêtre modale de réservation, menu burger repliable).
+- **Sensibilisation à l'expérience utilisateur (UX)** : structuration d'un parcours client clair (découverte du concept, consultation des variétés et tarifs, formulaire de prise de contact/réservation).
 
 ---
 
-## 🚀 Installation & Lancement
+## ✨ Fonctionnalités Réalisées
 
-1. **Cloner le dépôt :**
+1. **Navigation One-Page Responsive :**
+   - Barre de navigation fixe (*sticky*) avec effet de flou élégant en arrière-plan.
+   - Menu burger optimisé pour les écrans tactiles.
+   - Liens d'ancrage avec défilement fluide (*Smooth Scroll*) vers les différentes sections.
+
+2. **Bannière d'Accueil Immersive (Hero Banner) :**
+   - En-tête plein écran valorisant l'atmosphère du restaurant.
+   - Boutons d'action (*Call-to-Action*) dirigeant directement vers la réservation et la commande.
+
+3. **Section Histoire & Savoir-Faire :**
+   - Présentation de la démarche culinaire, des produits frais et de la salle.
+   - Carrousel imbriqué présentant les créations du chef.
+
+4. **Carte Interactive avec Onglets :**
+   - Système d'onglets dynamiques Bootstrap (`nav-tabs`) permettant de basculer instantanément entre :
+     - 🥩 *Nos Plats Phares*
+     - 🥗 *Entrées & Tapas*
+     - 🍨 *Desserts & Douceurs*
+   - Cartes de présentation avec photos, descriptions des ingrédients et tarifs clairs en euros.
+
+5. **Carrousel Grand Format ("Les Délices Interdits") :**
+   - Carrousel en fondu (*carousel-fade*) mettant en valeur les spécialités phares et suggestions du chef.
+
+6. **Modale Interactive de Réservation / Commande :**
+   - Formulaire pop-up complet (nom, contact, nombre de couverts, date, créneau horaire et demandes particulières).
+
+7. **Pied de Page Complet (Footer) :**
+   - Horaires d'ouverture, coordonnées physiques, téléphone, réseaux sociaux et inscription à la newsletter.
+
+---
+
+## 🛠️ Technologies Utilisées
+
+| Technologie | Rôle dans le projet |
+| :--- | :--- |
+| **HTML5** | Balisage sémantique, structuration et accessibilité |
+| **CSS3** | Styles personnalisés, variables et adaptations graphiques |
+| **Bootstrap 5.3.5** | Framework responsive, grille, carrousels, onglets et modales |
+| **Google Fonts** | Polices de caractères *Merriweather* (sérif) & *Redressed* (cursif) |
+| **Font Awesome 6** | Icônes vectorielles pour l'interface |
+| **Git & GitHub** | Gestion de versions et publication du code source |
+
+---
+
+## 🚀 Installation & Visualisation Locale
+
+Le projet étant purement statique, aucune installation lourde n'est requise.
+
+1. **Cloner le projet :**
    ```bash
-   git clone https://github.com/votre-utilisateur/projet-restau.git
+   git clone https://github.com/<votre-pseudo>/<nom-du-repo>.git
    ```
 
-2. **Ouvrir le projet :**
-   - Ouvrez simplement le fichier `index.html` dans n'importe quel navigateur web moderne (Google Chrome, Firefox, Safari, Edge).
-   - Ou lancez un serveur local léger :
+2. **Lancer le site :**
+   - Ouvrez directement le fichier `index.html` dans votre navigateur favori.
+   - Ou lancez un mini-serveur local avec Python :
      ```bash
-     # Avec Python :
      python -m http.server 8000
      ```
-     Puis rendez-vous sur `http://localhost:8000`.
+     Puis ouvrez `http://localhost:8000` dans votre navigateur.
 
 ---
 
-## 🌐 Déploiement sur GitHub Pages (Gratuit)
+## 🌐 Déploiement en Ligne (GitHub Pages)
 
-Pour mettre le site en ligne gratuitement avec GitHub Pages :
-1. Rendez-vous sur votre dépôt GitHub.
-2. Allez dans **Settings** > **Pages**.
-3. Sous **Branch**, sélectionnez la branche `main` et le dossier `/ (root)`.
-4. Cliquez sur **Save**.
-5. Votre site sera accessible en quelques minutes à l'adresse :
-   `https://votre-utilisateur.github.io/projet-restau/`
+Ce projet est optimisé pour un hébergement gratuit et rapide via **GitHub Pages** :
+1. Dans votre dépôt GitHub, ouvrez **Settings** > **Pages**.
+2. Sous **Branch**, sélectionnez `main` et le dossier `/ (root)`.
+3. Cliquez sur **Save**.
+4. Le site sera accessible en ligne en moins de 2 minutes.
 
 ---
 
-## 👤 Auteur
+## 👨‍💻 Auteur
 
-- **Lucien HAIKOU**
+- **Lucien HAIKOU**  
+  *Projet universitaire de 2ᵉ année (Année 2025) — Apprentissage de Bootstrap et intégration Web.*

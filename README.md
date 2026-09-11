@@ -68,7 +68,7 @@ Le projet étant purement statique, aucune installation lourde n'est requise.
 
 1. **Cloner le projet :**
    ```bash
-   git clone https://github.com/<votre-pseudo>/<nom-du-repo>.git
+   git clone https://github.com/lucienhaikou10/chic-food.git
    ```
 
 2. **Lancer le site :**
@@ -78,16 +78,6 @@ Le projet étant purement statique, aucune installation lourde n'est requise.
      python -m http.server 8000
      ```
      Puis ouvrez `http://localhost:8000` dans votre navigateur.
-
----
-
-## Déploiement en Ligne (GitHub Pages)
-
-Ce projet est optimisé pour un hébergement gratuit et rapide via **GitHub Pages** :
-1. Dans votre dépôt GitHub, ouvrez **Settings** > **Pages**.
-2. Sous **Branch**, sélectionnez `main` et le dossier `/ (root)`.
-3. Cliquez sur **Save**.
-4. Le site sera accessible en ligne en moins de 2 minutes.
 
 ---
 

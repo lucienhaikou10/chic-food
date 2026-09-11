@@ -1,14 +1,14 @@
-# 🍽️ Chic Food - Projet d'Intégration Web (Bootstrap 5)
+# 🍽️ Chic Food - Site Vitrine One-Page (Bootstrap 5)
 
-Projet académique réalisé en **2025** dans le cadre de ma **deuxième année d'université**.  
-Ce projet a été conçu lors de mon apprentissage du framework front-end **Bootstrap 5**, dans l'objectif de concevoir un site web vitrine complet, élégant et entièrement responsive pour un restaurant gastronomique fictif : **Chic Food**.
+**Projet personnel réalisé en totale autonomie (en solo)** en **2025**, en parallèle de ma deuxième année d'université.  
+Ce projet a été conçu dans le cadre de mon auto-apprentissage du framework **Bootstrap 5**, avec pour objectif de développer de A à Z un **site vitrine One-Page** moderne, interactif et responsive pour un restaurant gastronomique fictif : **Chic Food**.
 
 ---
 
-## 🎯 Contexte & Objectifs Pédagogiques
+## 🎯 Contexte & Objectifs
 
-Ce projet universitaire avait pour vocation de mettre en pratique les concepts fondamentaux de l'intégration web moderne :
-- **Découverte et apprentissage de Bootstrap 5** : utilisation du système de grille à 12 colonnes, des breakpoints responsive, et des composants UI prêts à l'emploi.
+Ce projet personnel visait à maîtriser par la pratique les compétences fondamentales de l'intégration web moderne :
+- **Découverte et apprentissage en solo de Bootstrap 5** : utilisation de la grille à 12 colonnes, des breakpoints responsive et des composants UI natifs.
 - **Responsive Web Design (RWD)** : conception d'une interface adaptée aux smartphones, tablettes et ordinateurs de bureau.
 - **Surcharge et personnalisation CSS** : personnalisation de la charte graphique par-dessus Bootstrap (palette de couleurs, typographies personnalisées, ombrages, effets *backdrop-filter*).
 - **Interactivité front-end** : mise en œuvre des composants interactifs de Bootstrap (onglets dynamiques de la carte, carrousels en boucle, fenêtre modale de réservation, menu burger repliable).
@@ -94,4 +94,4 @@ Ce projet est optimisé pour un hébergement gratuit et rapide via **GitHub Page
 ## 👨‍💻 Auteur
 
 - **Lucien HAIKOU**  
-  *Projet universitaire de 2ᵉ année (Année 2025) — Apprentissage de Bootstrap et intégration Web.*
+  *Développeur web — Projet personnel réalisé en solo (2025, 2ᵉ année d'université).*
